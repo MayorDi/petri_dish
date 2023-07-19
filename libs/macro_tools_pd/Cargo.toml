@@ -1,0 +1,21 @@
+[package]
+name = "macro_tools_pd"
+authors = ["Dmitriy Mayorov<MayorDi@yandex.ru>"]
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+readme = "./README.md"
+rust-version = "1.60"
+homepage = "https://github.com/MayorDi/petri_dish/libs/macro_tools_pd"
+repository = "https://github.com/MayorDi/petri_dish/libs/macro_tools_pd"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+syn = "2.0.26"
+quote = "1.0"
+
+[lib]
+proc-macro = true
+
