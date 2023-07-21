@@ -7,13 +7,21 @@ edition = "2021"
 license = "Apache-2.0"
 readme = "./README.md"
 rust-version = "1.60"
-homepage = ""
-repository = ""
+homepage = "https://github.com/MayorDi/petri_dish"
+repository = "https://github.com/MayorDi/petri_dish"
 publish = false
 
 [dependencies]
-ocl = "0.19"
 gl = "0.14.0"
 glfw = "0.52.0"
-libc = "0.2.147"
 rand = "0.8.5" 
+derive-new = "0.5.9"
+syn = "2.0.26"
+macro_tools_pd = { path = "./libs/macro_tools_pd/" }
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = 'abort'
+strip = true
