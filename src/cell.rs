@@ -22,7 +22,7 @@ pub trait Behaviour {
 
     fn generate_energy(&mut self);
 
-    fn to_attack(&self, target: &mut Cell);
+    fn attack(&self, target: &mut Cell);
 
-    fn to_veer(&mut self, direction: Direction);
+    fn veer(&mut self, direction: Direction);
 }
