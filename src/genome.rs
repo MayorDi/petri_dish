@@ -8,6 +8,6 @@ pub struct Genome(pub Genes);
 #[derive(derive_new::new, Debug, Clone, Copy)]
 pub enum Gene {
     Reproduce,
-    ToVeer(Direction),
+    ToRotate(Direction),
     GenerateEnergy,
 }

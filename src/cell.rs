@@ -23,5 +23,5 @@ pub trait Behaviour {
 
     fn attack(&self, target: &mut Cell);
 
-    fn rotait(&mut self, direction: Direction);
+    fn rotate(&mut self, direction: Direction);
 }
