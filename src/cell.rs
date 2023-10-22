@@ -2,9 +2,8 @@ use crate::{
     position::*,
     genome::*
 };
-use macro_tools_pd::{GetPosition, ArrayPosition};
 
-#[derive(derive_new::new, Debug, Clone, Copy, GetPosition, ArrayPosition)]
+#[derive(derive_new::new, Debug, Clone, Copy)]
 pub struct Cell {
     pub id: usize,
     pub position: Position,
@@ -24,5 +23,5 @@ pub trait Behaviour {
 
     fn attack(&self, target: &mut Cell);
 
-    fn veer(&mut self, direction: Direction);
+    fn rotait(&mut self, direction: Direction);
 }

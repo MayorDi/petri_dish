@@ -1,2 +1,0 @@
-[build]
-rustc-wrapper = "C:/Users/Dmitry/scoop/shims/sccache.exe"

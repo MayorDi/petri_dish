@@ -13,11 +13,9 @@ publish = false
 
 [dependencies]
 gl = "0.14.0"
-glfw = "0.52.0"
+glfw = "0.53.0"
 rand = "0.8.5" 
 derive-new = "0.5.9"
-syn = "2.0.26"
-macro_tools_pd = { path = "./libs/macro_tools_pd/" }
 
 [profile.release]
 opt-level = 'z'
